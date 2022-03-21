@@ -10,18 +10,27 @@ public class Tamgiac {
         this.a = sc.nextInt();
         this.b = sc.nextInt();
         this.c = sc.nextInt();
-        System.out.println("Dien tich tam giac la: " + chuvi() );
+        System.out.println("Dien tich tam giac la: " + dientich() );
         System.out.println("Chu vi tam giac la: " + chuvi());
     }
 
-    public float chuvi(){
-        float cv = (float)(this.a + this.b + this.c);
-        return cv;
+    int chuvi(){
+        return (a + b + c);
     }
 
-    public float dientich(){
-        float ncv = (float)(this.a + this.b + this.c)/2;
-        float s = (float)Math.sqrt(ncv*(ncv-a)*(ncv-b)*(ncv-c));
-        return s;
+    double dientich(){
+        double ncv = (double) (a + b + c)/2;
+        return Math.sqrt(ncv*(ncv-a)*(ncv-b)*(ncv-c));
     }
+
+    //ham getter setter
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
 }
