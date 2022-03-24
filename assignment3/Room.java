@@ -1,16 +1,31 @@
 package assignment3;
 
-public class Room{
+import java.util.ArrayList;
+
+public class Room extends User{
     public String tenphong;
     public String vitri;
-    public int giathuephong;
-    public String userlist;
+    public int giathuephong = 300000;
 
-    public Room(String tenphong, String vitri, int giathuephong, String userlist){
+    ArrayList<String> User = new ArrayList<>();
+
+    public void adduser(){
+        if(getMoney() > giathuephong){
+            User.add(name);
+        }else {
+            System.out.println("So tien quy khach khong du, vui long quay lai sau");
+        }
+    }
+
+    public void info(){
+        System.out.println("Thong tin khach thue phong: "+getName()+" ở phòng: "+getVitri()+"co gia: "+getGiathuephong());
+    }
+
+
+    public Room(String tenphong, String vitri, int giathuephong){
         this.tenphong = tenphong;
         this.vitri = vitri;
         this.giathuephong = giathuephong;
-        this.userlist = userlist;
     }
 
     public String getTenphong() {
@@ -37,11 +52,6 @@ public class Room{
         this.giathuephong = giathuephong;
     }
 
-    public String getUserlist() {
-        return userlist;
-    }
 
-    public void setUserlist(String userlist) {
-        this.userlist = userlist;
-    }
+
 }
