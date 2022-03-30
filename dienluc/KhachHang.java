@@ -3,11 +3,11 @@ package dienluc;
 import java.util.Scanner;
 
 public class KhachHang {
-    protected int MaKH, SoLuong;
-    protected double DonGia, ThanhTien;
-    protected String NgayHD, HoTenKH;
+    public int MaKH, SoLuong;
+    public double DonGia, ThanhTien;
+    public String NgayHD, HoTenKH;
     Scanner in =new Scanner(System.in);
-    protected KhachHang()
+    public KhachHang()
     {
         this.MaKH=0;
         this.DonGia=0;
@@ -15,7 +15,7 @@ public class KhachHang {
         this.HoTenKH="";
         this.SoLuong=0;
     }
-    protected KhachHang(int ma, double dgia, String ngay, String hoten, int sl,
+    public KhachHang(int ma, double dgia, String ngay, String hoten, int sl,
                         double ttien)
     {
         this.MaKH=ma;
@@ -25,43 +25,43 @@ public class KhachHang {
         this.SoLuong=sl;
         this.ThanhTien=ttien;
     }
-    protected int getMaKH() {
+    public int getMaKH() {
         return MaKH;
     }
-    protected void setMaKH(int maKH) {
+    public void setMaKH(int maKH) {
         MaKH = maKH;
     }
-    protected double getDonGia() {
+    public double getDonGia() {
         return DonGia;
     }
-    protected void setDonGia(double donGia) {
+    public void setDonGia(double donGia) {
         DonGia = donGia;
     }
-    protected String getNgayHD() {
+    public String getNgayHD() {
         return NgayHD;
     }
-    protected void setNgayHD(String ngayHD) {
+    public void setNgayHD(String ngayHD) {
         NgayHD = ngayHD;
     }
-    protected String getHoTenKH() {
+    public String getHoTenKH() {
         return HoTenKH;
     }
-    protected void setHoTenKH(String hoTenKH) {
+    public void setHoTenKH(String hoTenKH) {
         HoTenKH = hoTenKH;
     }
-    protected int getSoLuong() {
+    public int getSoLuong() {
         return SoLuong;
     }
-    protected void setSoLuong(int sl) {
+    public void setSoLuong(int sl) {
         SoLuong = sl;
     }
-    protected double getThanhTien() {
+    public double getThanhTien() {
         return ThanhTien;
     }
-    protected void setThanhTien(double thanhTien) {
+    public void setThanhTien(double thanhTien) {
         ThanhTien = thanhTien;
     }
-    protected void nhap()
+    public void nhap()
     {
         System.out.println("Nhap Ma Khach Hang: ");
         MaKH = in.nextInt();

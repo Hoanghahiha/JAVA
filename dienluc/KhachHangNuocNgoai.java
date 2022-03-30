@@ -1,7 +1,7 @@
 package dienluc;
 
 public class KhachHangNuocNgoai extends KhachHang{
-    private String QuocTich;
+    public String QuocTich;
     public KhachHangNuocNgoai()
     {
         super();

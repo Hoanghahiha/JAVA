@@ -1,8 +1,8 @@
 package dienluc;
 
 public class KhachHangList {
-    private KhachHang kh[] = new KhachHang[50];
-    private int CountKH, sum1=0, sum2=0, dem=0, sumtien=0;
+    public KhachHang kh[] = new KhachHang[50];
+    public int CountKH, sum1=0, sum2=0, dem=0, sumtien=0;
     public KhachHangList()
     {
         CountKH=0;
