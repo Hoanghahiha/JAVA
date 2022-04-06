@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanliDt.PhoneListController">
+   <children>
+      <Text layoutX="241.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHAM MEM QUAN LY DANH BA" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Bold" size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tbView" layoutX="47.0" layoutY="68.0" prefHeight="312.0" prefWidth="507.0">
+        <columns>
+          <TableColumn fx:id="tbTen" prefWidth="179.0" text="Ten" />
+          <TableColumn fx:id="tbSdt" prefWidth="234.0" text="SDT" />
+            <TableColumn fx:id="tbEdit" prefWidth="46.0" text="Edit" />
+            <TableColumn fx:id="tbDelete" prefWidth="47.0" text="Delete" />
+        </columns>
+      </TableView>
+      <Button onAction="#formScreen" layoutX="489.0" layoutY="21.0" mnemonicParsing="false" text="ADD SDT" />
+      <TextField fx:id="tbSearch" layoutX="47.0" layoutY="21.0" prefHeight="25.0" prefWidth="91.0" promptText="Enter text herer" />
+      <Button onAction="#search" layoutX="138.60" layoutY="21.0" mnemonicParsing="false" text="Search" />
+   </children>
+</AnchorPane>

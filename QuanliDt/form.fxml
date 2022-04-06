@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanliDt.FormController">
+   <children>
+      <Text layoutX="289.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORM" />
+      <TextField fx:id="cTen" layoutX="231.0" layoutY="87.0" promptText="Nhap Ten" />
+      <TextField fx:id="cSDT" layoutX="231.0" layoutY="138.0" promptText="Nhap SDT" />
+      <Button onAction="#submit" layoutX="231.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Submit" />
+      <Text fx:id="errMsg" fill="#f53535" layoutX="231.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="32.859375" />
+   </children>
+</AnchorPane>
