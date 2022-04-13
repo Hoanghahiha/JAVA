@@ -34,9 +34,9 @@ public class Complex {
     }
 
     public void scan(Scanner sc) {
-        System.out.print("\tNhap vao phan thuc: ");
+        System.out.print("\tEnter real part: ");
         realPart = sc.nextDouble();
-        System.out.print("\tNhap vao phan ao: ");
+        System.out.print("\tEnter imaginary part: ");
         imaginaryPart = sc.nextDouble();
     }
 
