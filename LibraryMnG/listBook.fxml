@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ListController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="780.0">
+            <children>
+                <Text layoutX="335.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book List" wrappingWidth="123.9287109375">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Text>
+                <Button layoutX="624.0" layoutY="15.0" mnemonicParsing="false" onAction="#formScreen" prefHeight="28.0" prefWidth="135.0" text="Them phieu">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tbView" layoutX="17.0" layoutY="86.0" prefHeight="514.0" prefWidth="764.0">
+                    <columns>
+                        <TableColumn fx:id="cName" prefWidth="99.0" text="So Phieu" />
+                        <TableColumn fx:id="cPrice" minWidth="0.0" prefWidth="122.0" text="Ma SV" />
+                        <TableColumn fx:id="cSoLuong" minWidth="0.0" prefWidth="150.0" text="Ma Sach" />
+                        <TableColumn fx:id="cStatus" minWidth="0.0" prefWidth="178.0" text="Ngay Tra" />
+                  <TableColumn fx:id="cStatus1" minWidth="0.0" prefWidth="214.0" text="Trang Thai" />
+                    </columns>
+                </TableView>
+                <TextField fx:id="txtSearch" layoutX="17.0" layoutY="16.0" prefHeight="27.0" prefWidth="182.0" promptText="Search by name.." />
+                <Button layoutX="199.0" layoutY="18.0" mnemonicParsing="false" onAction="#search" text="Search" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>
