@@ -17,7 +17,7 @@ public class StudentMethod {
         System.out.println("/****************************************/");
         System.out.println("Your choice: ");
     }
-    public static void input() {
+    public static void addStudent() {
         Student std = new Student();
         std.input();
 

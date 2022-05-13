@@ -19,7 +19,7 @@ public class Main extends StudentMethod{
             c = scan.nextInt();
             switch(c) {
                 case 1:
-                    input();
+                    addStudent();
                     break;
                 case 2:
                     display();
