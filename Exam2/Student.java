@@ -58,9 +58,9 @@ public class Student {
         enrollId = scan.nextLine();
 
         System.out.println("Enter student's first name: ");
-        firstName = scan.next();
+        firstName = scan.nextLine();
 
-        System.out.println("Enter student's first name: ");
+        System.out.println("Enter student's last name: ");
         lastName = scan.nextLine();
 
         System.out.println("Enter student's age: ");
